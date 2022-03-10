@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.mobile {
+    background-color: #054077;
+    height: 73px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.linknav a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.linknav1 a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #737373 !important;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.linknav1 a:hover,
+.linknav1 a:active,
+.linknav1 a.active {
+    color: #e27800 !important;
+}
+
+.Logo {
+    background-image: url(./logo.png);
+}
+
+.button {
+    margin: 5%;
+    background-color: #054077;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 163px;
+    height: 63px;
+    font-size: 28px;
+    border: 2px #ffffff;
+    border-radius: 10px;
+}
+
+@media (max-width: 667px) {
+    .img {
+        height: 50px;
+        width: 120px;
+        padding: 5px;
+    }
+    .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -10px;
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+        border: 2px #6d74b2;
+        border-radius: 7px;
+    }
+
+    .linknav a {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #ffffff !important;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .linknav1 a {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #050505 !important;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .mobile {
+        background-color: #054077;
+        height: 53px;
+        width: 100%;
+    }
+
+    body {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .button {
+        margin: 4%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+}

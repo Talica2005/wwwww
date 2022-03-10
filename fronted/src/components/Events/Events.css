@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.form-content {
+    text-align: center;
+
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 30rem;
+    width: 65%;
+    background-color: #d1dde8;
+}
+
+.fragment-style {
+    background-color: #d1dde8;
+}
+
+.boka-online {
+    text-align: center;
+    color: #de7143;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 1.5rem;
+}
+
+.size-form {
+    height: 3.8rem;
+    font-size: 1.8rem;
+    border: 2px;
+    border-radius: 10px;
+    padding-left: 2.5rem;
+    margin-bottom: 0.7rem;
+}
+
+@media (min-width: 768px) {
+    .size-form {
+        height: 3.8rem;
+        font-size: 1.8rem;
+        border: 2px;
+        border-radius: 10px;
+        padding-left: 2.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .form-content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+    .form-content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 667px) {
+    .size-form {
+        height: 3rem;
+        font-size: 1rem;
+        border: 1px;
+        border-radius: 5px;
+        padding-left: 1.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .form-content {
+        width: 95%;
+    }
+}

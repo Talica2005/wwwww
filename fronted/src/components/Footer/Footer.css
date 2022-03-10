@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.font {
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.socmedia {
+    font-size: 40px;
+}
+
+.socmedia1 {
+    font-size: 40px;
+    padding-top: 0;
+    padding-bottom: 5rem;
+}
+
+h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.card-group > .card {
+    margin-bottom: 0;
+}
+
+.card-group > .card {
+    margin-bottom: 0;
+}
+
+.card > div {
+    height: 100%;
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer-bottom {
+    height: 100%;
+
+    padding-top: 45px;
+    padding-bottom: 0;
+}

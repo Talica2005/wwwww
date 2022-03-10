@@ -1,0 +1,69 @@
+.bookings-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 40rem;
+    max-width: 90%;
+    font-size: 1.3rem;
+}
+
+.bookings-icon-delete {
+    cursor: pointer;
+}
+
+.bookings-items {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.bookings-item {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.boka-online {
+    text-align: center;
+    color: #de7143;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 1.5rem;
+}
+
+.presentation {
+    text-align: center;
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+.presentation-user {
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+.accordion-booking {
+    padding-bottom: 2rem;
+    width: 75%;
+}
+
+.accordion-item {
+    background-color: #393939;
+    border: 2px;
+    border-radius: 10px;
+    color: white;
+}
+
+.boka-online-o {
+    font-family: 'Roboto Condensed', sans-serif;
+}

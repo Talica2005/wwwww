@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.Login {
+    background-color: #d1dde8;
+    font-family: 'Roboto', sans-serif;
+}
+.button-log {
+    background-color: #4876ba;
+    margin: 1rem 0.5rem 2rem 0;
+    padding: 1rem;
+    width: 48%;
+}
+.button-log-reg {
+    background-color: #4876ba;
+    margin: 1rem 0 2rem 0;
+    padding: 1rem;
+    float: right;
+    width: 48%;
+}
+
+.form-content-log {
+    background-color: #d1dde8;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.form-control-log {
+    background-color: #ffffff;
+    height: 3.8rem;
+    font-size: 1.5rem;
+    border: 2px;
+    border-radius: 10px;
+    padding-left: 2.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.form {
+    background-color: red;
+    width: 85%;
+}
+
+.logga-in {
+    text-align: center;
+    color: #000000;
+    font-size: 34px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+@media all and (min-width: 480px) {
+    .Login {
+        padding: 60px 0;
+    }
+
+    .Login form {
+        margin: 0 auto;
+        max-width: 65%;
+    }
+}
