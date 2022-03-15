@@ -79,25 +79,43 @@ class Bookings extends Component {
         })
     }
 
+    // mutation BookEvent($id: ID!) {
+    //     bookEvent(eventId: $id) {
+    //     _id
+    //     name
+    //     phone
+    //     title
+    //     description
+    //     date
+    //     price
+    //   }
+    // }
+
     bookEventHandler = (event) => {
-        if (!this.context.token) {
-            this.setState({ selectedEvent: null })
-            return
-        }
+        // if (!this.context.token) {
+        //     this.setState({ selectedEvent: null })
+        //     return
+        // }
+        var { _id, name, phone, title, description, price, date } = event
         const requestBody = {
             query: `
-            mutation BookEvent($id: ID!) {
-                bookEvent(eventId: $id) {
-                _id
-                name
-                phone
-                title
-                description
-                date
-                price
-              }
-            }
+            mutation ($id:ID!,$eventInput:EventInput) { updateEvent(id:$id,eventInput:$eventInput) {
+                
+            _id
+            name
+            phone
+            title
+            description
+            price
+            date
+          }
+        }
+          
             `,
+            variables: {
+                id: _id,
+                eventInput: { name, phone, title, description, price, date },
+            },
         }
 
         fetch('http://localhost:8000/graphql', {
@@ -182,7 +200,7 @@ class Bookings extends Component {
 
                             <div>
                                 <div className="presentation">
-                                    <p>Välkommen, {this.props.email}! </p>
+                                    <p>Välkommen,{JSON.stringify(this.props)} ! </p>
                                 </div>
 
                                 <Accordion defaultActiveKey="0">

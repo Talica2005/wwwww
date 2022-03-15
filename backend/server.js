@@ -2,9 +2,14 @@ const express = require('express')
 const graphqlHTTP = require('express-graphql')
 const mongoose = require('mongoose')
 const isUser = require('./middelware/is-user')
+const { readFileSync } = require('fs')
+const { buildSchema } = require('graphql')
 
-const graphQlSchema = require('./graphql/schema/index')
 const graphQlResolvers = require('./graphql/resolvers/index')
+
+const graphQlSchema = buildSchema(
+    readFileSync('./graphql/schema/index.graphql', { encoding: 'utf-8' })
+)
 
 const app = express()
 

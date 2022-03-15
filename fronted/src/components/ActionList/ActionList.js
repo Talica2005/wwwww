@@ -113,6 +113,17 @@ export default class ActionList extends Component {
                                                                         this.state.selectedEvent
                                                                             .name
                                                                     }
+                                                                    onChange={(e) =>
+                                                                        this.setState({
+                                                                            selectedEvent: {
+                                                                                ...this.state
+                                                                                    .selectedEvent,
+                                                                                name: String(
+                                                                                    e.target.value
+                                                                                ),
+                                                                            },
+                                                                        })
+                                                                    }
                                                                     // placeholder="Namn"
                                                                 ></Form.Control>
                                                             </Form.Group>
@@ -131,7 +142,7 @@ export default class ActionList extends Component {
                                                                             selectedEvent: {
                                                                                 ...this.state
                                                                                     .selectedEvent,
-                                                                                price: parseInt(
+                                                                                phone: String(
                                                                                     e.target.value
                                                                                 ),
                                                                             },
@@ -151,6 +162,17 @@ export default class ActionList extends Component {
                                                                         this.state.selectedEvent
                                                                             .title
                                                                     }
+                                                                    onChange={(e) =>
+                                                                        this.setState({
+                                                                            selectedEvent: {
+                                                                                ...this.state
+                                                                                    .selectedEvent,
+                                                                                title: String(
+                                                                                    e.target.value
+                                                                                ),
+                                                                            },
+                                                                        })
+                                                                    }
                                                                     // placeholder="Tjänst"
                                                                 />
                                                             </Form.Group>
@@ -165,6 +187,17 @@ export default class ActionList extends Component {
                                                                         this.state.selectedEvent
                                                                             .price
                                                                     }
+                                                                    onChange={(e) =>
+                                                                        this.setState({
+                                                                            selectedEvent: {
+                                                                                ...this.state
+                                                                                    .selectedEvent,
+                                                                                price: parseFloat(
+                                                                                    e.target.value
+                                                                                ),
+                                                                            },
+                                                                        })
+                                                                    }
 
                                                                     // placeholder="Price"
                                                                 />
@@ -175,11 +208,23 @@ export default class ActionList extends Component {
                                                             <Form.Group className="mb-3">
                                                                 <Form.Control
                                                                     className="size-form"
-                                                                    type="datetime-local"
+                                                                    type="text"
+                                                                    form
                                                                     id="date"
                                                                     value={
                                                                         this.state.selectedEvent
                                                                             .date
+                                                                    }
+                                                                    onChange={(e) =>
+                                                                        this.setState({
+                                                                            selectedEvent: {
+                                                                                ...this.state
+                                                                                    .selectedEvent,
+                                                                                date: String(
+                                                                                    e.target.value
+                                                                                ),
+                                                                            },
+                                                                        })
                                                                     }
 
                                                                     // placeholder="Datum / Tid"
@@ -197,6 +242,17 @@ export default class ActionList extends Component {
                                                                     value={
                                                                         this.state.selectedEvent
                                                                             .description
+                                                                    }
+                                                                    onChange={(e) =>
+                                                                        this.setState({
+                                                                            selectedEvent: {
+                                                                                ...this.state
+                                                                                    .selectedEvent,
+                                                                                description: String(
+                                                                                    e.target.value
+                                                                                ),
+                                                                            },
+                                                                        })
                                                                     }
 
                                                                     // placeholder="Bilmärke"

@@ -1,8 +1,10 @@
 import React from 'react'
 
-export default React.createContext({
+const context = React.createContext({
     token: null,
     userId: null,
     login: (token, userId, tokenExpiration) => {},
     logout: () => {},
 })
+
+export default context

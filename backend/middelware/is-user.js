@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
     }
     const token = userHeader.split(' ')[1]
     if (!token || token === '') {
-        req.isUser = fasle
+        req.isUser = false
         return next()
     }
     let decodedToken

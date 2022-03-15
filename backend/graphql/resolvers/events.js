@@ -62,12 +62,11 @@ module.exports = {
     },
 
     updateEvent: async (args, req) => {
-        if (!req.isUser) {
-            throw new Error('Unauthenticated!')
-        }
-        var event = await Event.findById(args.eventId)
-        Object.assign(event, args)
-        let createdEvent
+        // if (!req.isUser) {
+        //     throw new Error('Unauthenticated!')
+        // }
+        var event = await Event.findById(args.id)
+        Object.assign(event, args.eventInput)
         try {
             const result = await event.save()
             return event
